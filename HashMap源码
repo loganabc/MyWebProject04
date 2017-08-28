@@ -1,0 +1,15 @@
+一、HashMap概述
+二、HashMap的数据结构
+三、HashMap源码分析
+3.1、关键属性
+3.2、构造方法
+3.3、存储数据
+3.4、调整大小
+3.5、数据读取
+3.6、HashMap性能参数
+3.7、Fail-Fast机制
+
+一、HashMap概述
+HashMap基于哈希表的Map接口的实现。次实现提供多有可选的映射操作，并允许使用null值和null键。（除了不同步和允许使用null之外，HashMap类与HashTable大致相同。）此类不保证映射的顺序，特别是它不保证该顺序恒久不变。
+值的注意的是HashMap不是线程安全的，如果想要线程安全的HashMap，可以通过Collections类的静态方法synchronizedMap获得线程安全的HashMap
+Map map = Collections.synchronizedMap(new HashMap());
